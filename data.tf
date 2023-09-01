@@ -6,8 +6,8 @@ data "aws_vpc" "test_vpc" {
 }
 
 data "aws_route_table" "default" {
-    filter {
-        name = "tag:Name"
-        values = ["Default"]
-    }
+  filter {
+    name   = "tag:Name"
+    values = ["Default"]
+  }
 }
